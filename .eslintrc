@@ -1,6 +1,14 @@
 {
   "extends": "airbnb",
+  "env": {
+    "browser": true,
+  },
   "rules": {
+    "arrow-parens": [2, "as-needed"],
+    "no-param-reassign": ["error", {
+        "props": true,
+        "ignorePropertyModificationsFor": ["el"]
+      }]
     "react/jsx-uses-react": 0,
     "react/react-in-jsx-scope": 0,
     "react/jsx-filename-extension": [1, {"extensions": [".js"]}],
