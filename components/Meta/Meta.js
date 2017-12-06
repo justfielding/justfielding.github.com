@@ -80,7 +80,6 @@ export const Meta = ({ description, title, url }) => (
         }
       `}
     </style>
-    <script dangerouslySetInnerHTML={{ __html: 'glitch(window);' }} />
   </div>
 );
 
