@@ -36,6 +36,14 @@ export const Meta = ({ description, title, url }) => (
           background: #fafafa;
           margin: 60px 36px;
         }
+        a {
+          color: rgba(190, 36, 70, 1);
+          font-weight: bold;
+          -webkit-font-smoothing: antialiased;
+          border: none;
+          text-decoration: none;
+          user-select: none;
+        }
       `}
     </style>
   </div>

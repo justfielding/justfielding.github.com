@@ -38,8 +38,10 @@ export default class extends React.Component {
           </defs>
         </svg>
 
-          <strong>.</strong>Fielding<strong>.</strong>
         <h1>
+          <strong className="js-random-interval glitched">.</strong>
+          <span className="js-random-interval glitched">Fielding</span>
+          <strong className="js-random-interval glitched">.</strong>
         </h1>
         <p>
           Hello, I&#39;m Fielding Johnston, a design-minded full stack software engineer
@@ -89,12 +91,6 @@ export default class extends React.Component {
           height: 1px;
         }
         .glitched {
-          -webkit-font-smoothing: antialiased;
-          border: none;
-          text-decoration: none;
-          font-weight: bold;
-          user-select: none;
-          color: rgba(190, 36, 70, 1);
           -webkit-transition: background-color 0.1s ease-out;
           -moz-transition: background-color 0.1s ease-out;
           transition: background-color 0.1s ease-out;
