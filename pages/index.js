@@ -38,8 +38,8 @@ export default class extends React.Component {
           </defs>
         </svg>
 
-        <h1 className="header">
           <strong>.</strong>Fielding<strong>.</strong>
+        <h1>
         </h1>
         <p>
           Hello, I&#39;m Fielding Johnston, a design-minded full stack software engineer
@@ -74,11 +74,12 @@ export default class extends React.Component {
         <script cfasync="false" src="https://widget.battleforthenet.com/widget.js" async />
 
         <style jsx>{`
-        .header {
+        h1 {
           font-weight: 900;
           white-space: nowrap;
         }
-        .header strong {
+        h1 strong {
+          font-weight: 900;
           color: rgba(190, 36, 70, 1);
         }
         .svg-filters {
