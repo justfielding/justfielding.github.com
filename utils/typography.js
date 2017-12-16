@@ -18,6 +18,15 @@ export const typography = new Typography({
   bodyFontFamily: ['Inconsolata', 'monospace'],
   bodyColor: '#1b1a19',
   includeNormalize: true,
+  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
+    return {
+      '@media only screen and (max-width:480px)': {
+        html: {
+          fontSize: '16px',
+        },
+      },
+    }
+  },
 });
 
 export default typography;
