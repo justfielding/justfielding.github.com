@@ -34,6 +34,7 @@ export const Meta = ({ description, title, url }) => (
         }
         body {
           background: #fafafa;
+          margin: 60px 36px;
         }
       `}
     </style>
