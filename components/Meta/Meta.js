@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { string } from 'prop-types';
 import { TypographyStyle, GoogleFont } from 'react-typography';
 import { typography } from '../../utils/typography';
-import { glitch } from '../../utils/glitch';
 
 // Originals:
 // link color: background: rgba(157, 201, 255, 0.32);
@@ -20,7 +19,6 @@ export const Meta = ({ description, title, url }) => (
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" />
       <TypographyStyle typography={typography} />
       <GoogleFont typography={typography} />
     </Head>
@@ -73,10 +71,6 @@ export const Meta = ({ description, title, url }) => (
         }
         .glitched:focus {
           outline: none;
-        }
-        .safari .glitched {
-          -webkit-filter: none !important;
-          filter: none !important;
         }
       `}
     </style>

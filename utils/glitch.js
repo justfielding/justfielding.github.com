@@ -1,32 +1,31 @@
 import { TimelineLite } from 'gsap';
 
-function glitchInit(window) {
-  const isSafari = /constructor/i.test(window.HTMLElement);
-  if (isSafari) {
-    window.document.getElementsByTagName('html')[0].classList.add('safari');
-  }
+function glitchInit() {
+  const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
 
-  const glitched = window.document.querySelectorAll('.glitched');
+  const glitched = document.querySelectorAll('.glitched');
 
-  glitched.forEach((link) => {
+  glitched.forEach(el => {
     const turbVal = { val: 0.000001 };
-    const turb = window.document.querySelectorAll('#filter-glitch feTurbulence')[0];
+    const turb = document.querySelectorAll('#filter-glitch feTurbulence')[0];
+    const disp = document.querySelectorAll('#filter-glitch feDisplacementMap')[0];
     const Tl = new TimelineLite({
       paused: true,
       onUpdate() {
-        turb.setAttribute('baseFrequency', '0.00001 ' + turbVal.val); // Firefox bug is value is 0
+        turb.setAttribute('baseFrequency', '0.00001 ' + turbVal.val);
+        if(isSafari) disp.setAttribute('in2', 'warp');
       },
       onStart() {
-        link.style.filter = 'url(#filter-glitch)';
+        el.style.filter = 'url(#filter-glitch)';
       },
       onComplete() {
-        link.style.filter = 'none';
+        el.style.filter = 'none';
       },
     });
 
     Tl.to(turbVal, 0.1, { val: 0.8 });
 
-    link.addEventListener('mouseover', Tl.restart());
+    el.addEventListener('mouseover', () => Tl.restart());
   });
 }
 
