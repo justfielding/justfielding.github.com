@@ -38,7 +38,7 @@ export default class extends React.Component {
           </defs>
         </svg>
 
-        <h1>
+        <h1 className="header">
           <strong>.</strong>Fielding<strong>.</strong>
         </h1>
         <p>
@@ -73,7 +73,37 @@ export default class extends React.Component {
         </p>
         <script cfasync="false" src="https://widget.battleforthenet.com/widget.js" async />
 
-
+        <style jsx>{`
+        .header {
+          font-weight: 900;
+          white-space: nowrap;
+        }
+        .header strong {
+          color: rgba(190, 36, 70, 1);
+        }
+        .svg-filters {
+          position: absolute;
+          visibility: hidden;
+          width: 1px;
+          height: 1px;
+        }
+        .glitched {
+          -webkit-font-smoothing: antialiased;
+          border: none;
+          text-decoration: none;
+          font-weight: bold;
+          user-select: none;
+          color: rgba(190, 36, 70, 1);
+          -webkit-transition: background-color 0.1s ease-out;
+          -moz-transition: background-color 0.1s ease-out;
+          transition: background-color 0.1s ease-out;
+          transform: translateZ(0);
+          outline: 90px solid transparent !important;
+        }
+        .glitched:focus {
+          outline: none;
+        }
+        `}</style>
       </Page>
     );
   }

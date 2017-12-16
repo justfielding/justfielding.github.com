@@ -35,39 +35,6 @@ export const Meta = ({ description, title, url }) => (
         body {
           background: #fafafa;
         }
-        h1 {
-          font-weight: 900;
-        }
-        h1 strong {
-          color: rgba(190, 36, 70, 1);
-        }
-        .svg-filters {
-          position: absolute;
-          visibility: hidden;
-          width: 1px;
-          height: 1px;
-        }
-        .page {
-          max-width: 500px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .glitched {
-          -webkit-font-smoothing: antialiased;
-          border: none;
-          text-decoration: none;
-          font-weight: bold;
-          user-select: none;
-          color: rgba(190, 36, 70, 1);
-          -webkit-transition: background-color 0.1s ease-out;
-          -moz-transition: background-color 0.1s ease-out;
-          transition: background-color 0.1s ease-out;
-          transform: translateZ(0);
-          outline: 90px solid transparent !important;
-        }
-        .glitched:focus {
-          outline: none;
-        }
       `}
     </style>
   </div>
