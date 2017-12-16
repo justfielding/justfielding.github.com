@@ -26,13 +26,12 @@ export const Meta = ({ description, title, url }) => (
       {`
         ::selection {
           color: white;
-          background: rgba(190, 36, 70, 0.99);
+          background: rgba(190, 36, 70, 1);
         }
         ::-moz-selection {
           color: white;
           background: rgba(190, 36, 70, 1);
         }
-
         body {
           background: #fafafa;
         }
@@ -48,14 +47,11 @@ export const Meta = ({ description, title, url }) => (
           width: 1px;
           height: 1px;
         }
-
-          .page {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-          }
-
-
+        .page {
+          max-width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+        }
         .glitched {
           -webkit-font-smoothing: antialiased;
           border: none;
