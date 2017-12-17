@@ -1,8 +1,5 @@
-import Meta from '../Meta';
-
 export const Page = ({ children }) => (
   <div className="main">
-    <Meta />
     <div className="page">{children}</div>
     <style jsx>{`
       .page {
