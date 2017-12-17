@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Meta, Header } from '../components';
+import { Page, Meta, Header, Intro, Availability } from '../components';
 import glitchInit from '../utils/glitch';
 
 export default class extends React.Component {
@@ -38,28 +38,6 @@ export default class extends React.Component {
 
         <Header />
         <p>
-          Hello, I&#39;m Fielding Johnston, a design-minded full stack software engineer
-          working in the industry since 2005. Follow me on{' '}
-          <a href="https://github.com/fielding/" className="glitched">
-            github
-          </a>,{' '}
-          <a href="https://git.imbue.studio/fielding" className="glitched">
-            git.imbue.studio
-          </a>, and{' '}
-          <a href="https://codepen.io/fielding" className="glitched">
-            codepen
-          </a>{' '}
-          to see my latest work and inspiration. Check out my{' '}
-          <a className="glitched" href="https://justfielding.com/resume.pdf">
-            resume
-          </a>{' '}
-          and connect with me on{' '}
-          <a href="https://linkedin.com/in/fieldingjohnston" className="glitched">
-            linkedin
-          </a>{' '}
-          if you want to get to know me better.
-        </p>
-        <p>
           I am available for hire for both freelance and full time positions, and
           willing to relocate for the right opportunity. Feel free to get in touch
           with me at{' '}
@@ -67,6 +45,7 @@ export default class extends React.Component {
             hello@justfielding.com
           </a>.
         </p>
+        <Intro />
         <style jsx global>{`
         .svg-filters {
           position: absolute;
