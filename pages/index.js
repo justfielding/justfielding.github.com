@@ -4,9 +4,6 @@ import glitchInit from '../utils/glitch';
 
 export default class extends React.Component {
   componentDidMount() {
-    window._bftn_options = {
-      always_show_widget: true
-    };
     glitchInit();
   }
 
@@ -73,8 +70,6 @@ export default class extends React.Component {
             hello@justfielding.com
           </a>.
         </p>
-        <script cfasync="false" src="https://widget.battleforthenet.com/widget.js" async />
-
         <style jsx>{`
         h1 {
           font-weight: 900;
