@@ -4,6 +4,7 @@
 .AppleDouble
 .LSOverride
 npm-debug.log*
+.tern-port
 
 # Dependency directories
 node_modules
