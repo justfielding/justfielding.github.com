@@ -6,8 +6,6 @@ export const Availability = () => (
     <a href="mailto:hello@justfielding.com" className="glitched">
       hello@justfielding.com
     </a>.
-    <style jsx>{`
-    `}</style>
   </p>
 );
 
