@@ -1,7 +1,7 @@
 export const Intro = () => (
   <p>
-    Hello, I&#39;m Fielding Johnston, a design-minded full stack software engineer
-    working in the industry since 2005. Follow me on{' '}
+    Hello, I&#39;m Fielding Johnston, a design-minded full stack software
+    engineer working in the industry since 2005. Follow me on{' '}
     <a href="https://github.com/fielding/" className="glitched">
       github
     </a>,{' '}
@@ -20,8 +20,6 @@ export const Intro = () => (
       linkedin
     </a>{' '}
     if you want to get to know me better.
-    <style jsx>{`
-    `}</style>
   </p>
 );
 
