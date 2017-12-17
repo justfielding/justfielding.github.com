@@ -1,4 +1,11 @@
-import { Page, Meta, Header, Intro, Availability, GlitchEffect } from '../components';
+import {
+  Page,
+  Meta,
+  Header,
+  Intro,
+  Availability,
+  GlitchEffect,
+} from '../components';
 
 export const Index = () => (
   <Page>
@@ -8,6 +15,6 @@ export const Index = () => (
     <Availability />
     <GlitchEffect />
   </Page>
-)
+);
 
 export default Index;

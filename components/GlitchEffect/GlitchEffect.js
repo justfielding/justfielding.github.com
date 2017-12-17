@@ -34,22 +34,22 @@ export class GlitchEffect extends Component {
           </defs>
         </svg>
         <style jsx global>{`
-        .svg-filters {
-          position: absolute;
-          visibility: hidden;
-          width: 1px;
-          height: 1px;
-        }
-        .glitched {
-          -webkit-transition: background-color 0.1s ease-out;
-          -moz-transition: background-color 0.1s ease-out;
-          transition: background-color 0.1s ease-out;
-          transform: translateZ(0);
-          outline: 90px solid transparent !important;
-        }
-        .glitched:focus {
-          outline: none;
-        }
+          .svg-filters {
+            position: absolute;
+            visibility: hidden;
+            width: 1px;
+            height: 1px;
+          }
+          .glitched {
+            -webkit-transition: background-color 0.1s ease-out;
+            -moz-transition: background-color 0.1s ease-out;
+            transition: background-color 0.1s ease-out;
+            transform: translateZ(0);
+            outline: 90px solid transparent !important;
+          }
+          .glitched:focus {
+            outline: none;
+          }
         `}</style>
       </div>
     );

@@ -3,11 +3,6 @@ import { string } from 'prop-types';
 import { TypographyStyle, GoogleFont } from 'react-typography';
 import { typography } from '../../utils/typography';
 
-// Originals:
-// link color: background: rgba(157, 201, 255, 0.32);
-// text color: #2b343e
-// background: #FFF
-
 export const Meta = ({ description, title, url }) => (
   <div>
     <Head>

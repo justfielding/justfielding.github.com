@@ -25,7 +25,7 @@ export const typography = new Typography({
           fontSize: '16px',
         },
       },
-    }
+    };
   },
 });
 
