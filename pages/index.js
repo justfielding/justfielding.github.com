@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page } from '../components';
+import { Page, Meta, Header } from '../components';
 import glitchInit from '../utils/glitch';
 
 export default class extends React.Component {
@@ -35,11 +35,7 @@ export default class extends React.Component {
           </defs>
         </svg>
 
-        <h1>
-          <strong className="js-random-interval glitched">.</strong>
-          <span className="js-random-interval glitched">Fielding</span>
-          <strong className="js-random-interval glitched">.</strong>
-        </h1>
+        <Header />
         <p>
           Hello, I&#39;m Fielding Johnston, a design-minded full stack software engineer
           working in the industry since 2005. Follow me on{' '}
@@ -71,14 +67,6 @@ export default class extends React.Component {
           </a>.
         </p>
         <style jsx>{`
-        h1 {
-          font-weight: 900;
-          white-space: nowrap;
-        }
-        h1 strong {
-          font-weight: 900;
-          color: rgba(190, 36, 70, 1);
-        }
         .svg-filters {
           position: absolute;
           visibility: hidden;
