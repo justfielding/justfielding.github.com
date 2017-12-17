@@ -67,7 +67,7 @@ export default class extends React.Component {
             hello@justfielding.com
           </a>.
         </p>
-        <style jsx>{`
+        <style jsx global>{`
         .svg-filters {
           position: absolute;
           visibility: hidden;
