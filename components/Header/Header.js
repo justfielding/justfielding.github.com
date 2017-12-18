@@ -5,6 +5,7 @@ export const Header = () => (
     <strong className="js-random-interval glitched">.</strong>
     <style jsx>{`
       h1 {
+        margin-top: 60px;
         font-weight: 900;
         white-space: nowrap;
       }

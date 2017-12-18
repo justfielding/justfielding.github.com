@@ -29,7 +29,13 @@ export const Meta = ({ description, title, url }) => (
         }
         body {
           background: #fafafa;
-          margin: 60px 36px;
+          margin: 0 36px;
+          transition: all .2s ease-in-out;
+        }
+        body.night {
+          background: #1b1b1b;
+          color: #fafafa;
+
         }
         a {
           color: rgba(190, 36, 70, 1);
