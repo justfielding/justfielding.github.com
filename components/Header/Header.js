@@ -9,11 +9,12 @@ export const Header = () => (
           font-weight: 900;
           white-space: nowrap;
         }
-      h1 strong {
-        font-weight: 900;
-        color: rgba(190, 36, 70, 1);
-      }
-    `}</style>
+        h1 strong {
+          font-weight: 900;
+          color: rgba(190, 36, 70, 1);
+        }
+      `}
+    </style>
   </h1>
 );
 
