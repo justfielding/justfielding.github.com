@@ -27,6 +27,9 @@ export const Meta = ({ description, title, url }) => (
           color: white;
           background: rgba(190, 36, 70, 1);
         }
+        html {
+          overflow-y: auto;
+        }
         body {
           background: #fafafa;
           margin: 0 36px;
