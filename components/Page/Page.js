@@ -5,8 +5,7 @@ export const Page = ({ children }) => (
       {`
         .page {
           max-width: 500px;
-          margin-left: auto;
-          margin-right: auto;
+          margin: 60px auto;
         }
       `}
     </style>

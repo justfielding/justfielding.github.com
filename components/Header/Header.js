@@ -4,11 +4,10 @@ export const Header = () => (
     <span className="js-random-interval glitched">Fielding</span>
     <strong className="js-random-interval glitched">.</strong>
     <style jsx>{`
-      h1 {
-        margin-top: 60px;
-        font-weight: 900;
-        white-space: nowrap;
-      }
+        h1 {
+          font-weight: 900;
+          white-space: nowrap;
+        }
       h1 strong {
         font-weight: 900;
         color: rgba(190, 36, 70, 1);
