@@ -36,7 +36,7 @@ export const Meta = ({ description, title, url }) => (
           transition: all .2s ease-in-out;
         }
         body.night {
-          background: #1b1b1b;
+          background: #131417;
           color: #fafafa;
 
         }
