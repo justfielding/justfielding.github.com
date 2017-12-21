@@ -33,12 +33,11 @@ export const Meta = ({ description, title, url }) => (
         body {
           background: #fafafa;
           margin: 0 36px;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
         body.night {
           background: #131417;
           color: #fafafa;
-
         }
         a {
           color: rgba(190, 36, 70, 1);
