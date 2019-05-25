@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
-    "deploy": "next build && next export && scp -rp out/* jasmine:/srv/www/justfielding.com/public"
+    "deploy": "npm run export && scp -rp out/* jasmine:/srv/www/justfielding.com/public"
   },
   "keywords": [],
   "author": "Fielding Johnston",
