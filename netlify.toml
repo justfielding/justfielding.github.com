@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/linkedin"
   to = "https://www.linkedin.com/in/fieldingjohnston"
-  status = 200
+  status = 301
   force = true
