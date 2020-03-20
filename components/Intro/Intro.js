@@ -12,7 +12,7 @@ export const Intro = () => (
       codepen
     </a>{' '}
     to see my latest work and inspiration. Check out my{' '}
-    <a className="glitched" href="https://justfielding.com/resume.pdf">
+    <a className="glitched" href="/resume.pdf">
       resume
     </a>{' '}
     and connect with me on{' '}
