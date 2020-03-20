@@ -3,3 +3,8 @@
   to = "https://www.linkedin.com/in/fieldingjohnston"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://resume.justfielding.com"
+  to = "https://justfielding.com/static/resume.pdf"
+  status = 200

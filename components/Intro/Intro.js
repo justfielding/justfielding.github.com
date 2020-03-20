@@ -4,10 +4,7 @@ export const Intro = () => (
     engineer working in the industry since 2005. Follow me on{' '}
     <a href="https://github.com/fielding/" className="glitched">
       github
-    </a>,{' '}
-    <a href="https://git.imbue.studio/fielding" className="glitched">
-      git.imbue.studio
-    </a>, and{' '}
+    </a> and{' '}
     <a href="https://codepen.io/fielding" className="glitched">
       codepen
     </a>{' '}
