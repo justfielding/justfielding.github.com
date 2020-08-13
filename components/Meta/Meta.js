@@ -14,7 +14,6 @@ export const Meta = ({ description, title, url }) => (
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <script src="https://preview.vidy.sh/e6d39f52dcb60612c43fe3596a88bee0/embed.min.js" data-appid="auto" async></script>
       <TypographyStyle typography={typography} />
       <GoogleFont typography={typography} />
     </Head>
