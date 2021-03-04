@@ -16,6 +16,7 @@ export const Meta = ({ description, title, url }) => (
       <meta property="og:description" content={description} />
       <TypographyStyle typography={typography} />
       <GoogleFont typography={typography} />
+      <script src="https://static.vidy.com/embed.min.js" data-appid="7061353b-ed78-4f6b-8d10-73495a170914" data-postid="homepage"/>
     </Head>
     <style jsx global>
       {`
